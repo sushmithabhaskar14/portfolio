@@ -1,0 +1,25 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Users</h1>
+
+<div id="users">
+  
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Campaign name</th>
+      <th scope="col">view</th>
+
+    </tr>
+  </thead>
+  <tbody id="myTable">
+      <%=render "_user" %>
+  </tbody>
+</table>
+<%= link_to "New user", new_user_path %> 
+<

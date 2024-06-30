@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+<h1>Blogs</h1>
+
+<div id="blogs">
+  <% @blogs.each do |blog| %>
+    <%= render blog %>
+    <p>
+      <%= link_to "Show this blog", blog %>
+    </p>
+  <% end %>
+</div>
+<button id="click_me">Here</button>
+<%= link_to "New blog", new_blog_path %>
+
+<script type="text/javascript">
+$("#click_me").click(function(){
+  alert("Welcome Home.");
+});
+</script>
