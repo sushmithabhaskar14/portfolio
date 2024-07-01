@@ -1,9 +1,17 @@
-<% @users.each do |user| %>
-  <tr>
-  <th scope="row"><%=user.id%></th>
-  <td><%=user.name%></td>
-  <td><%=user.email%></td>
-  <td></td>
-  <td><%= link_to "view", user %></td>
-  </tr>    
-<%end%>
+<div id="<%= dom_id user %>">
+  <p>
+    <strong>Name:</strong>
+    <%= user.name %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= user.email %>
+  </p>
+
+  <p>
+    <strong>Campaigns list:</strong>
+    <%= user.campaigns_list.map { |ele| ele['campaign_name']}.join(',')%>
+  </p>
+
+</div>

@@ -3,10 +3,7 @@ class UsersController < ApplicationController
 
   # GET /users or /users.json
   def index
-   
-    @campaign_list = get_camplist
-    @filter_list
-    
+    @filter = Campaign.all.group_by{|e| e.campaign_id}
     if params['filter'].present?
       sql = "SELECT *
               FROM users,
@@ -16,10 +13,11 @@ class UsersController < ApplicationController
               WHERE jt.campaign_name = #{params['filter']}"
       @users= @users.find_by_sql(sql)
     else
-      @users.each do |user|
-        @campaignlist[user.id] = user.campaigns_list
-      end
-  
+     @users = User.all
+    end
+    @user_campaignlist = {}
+    @users.each do |user|
+      @user_campaignlist[user.id] = user.campaigns_list.each{|e| e['campaign_name'] }
     end
   end
 
@@ -39,7 +37,7 @@ class UsersController < ApplicationController
   # POST /users or /users.json
   def create
     @user = User.new(user_params)
-    @user.campaigns_list = JSON.parse(user_params[:campaigns_list])
+    @user.campaigns_list = create_capaign_hash(params[:user][:campaigns_list].reject { |c| c.empty? })
     respond_to do |format|
       if @user.save
         format.html { redirect_to user_url(@user), notice: "User was successfully created." }
@@ -73,7 +71,11 @@ class UsersController < ApplicationController
       format.json { head :no_content }
     end
   end
-
+  
+  def create_capaign_hash(_params)
+    Campaign.where(campaign_id: _params).map{|e| { "campaign_id" => e.campaign_id, "campaign_name" => e.campaign_name } }
+  end
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user

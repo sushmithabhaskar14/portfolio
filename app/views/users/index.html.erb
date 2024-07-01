@@ -17,9 +17,18 @@
 
     </tr>
   </thead>
-  <tbody id="myTable">
-      <%=render "_user" %>
+  <tbody>
+      <% @users.each do |user| %>
+        <tr>
+        <th scope="row"><%=user.id%></th>
+        <td><%=user.name%></td>
+        <td><%=user.email%></td>
+        <td><%= user.campaigns_list.map { |ele| ele['campaign_name']}.join(',')%>
+        </td>
+        <td><%= link_to "view", user %></td>
+        </tr>    
+      <%end%>
   </tbody>
 </table>
 <%= link_to "New user", new_user_path %> 
-<
+

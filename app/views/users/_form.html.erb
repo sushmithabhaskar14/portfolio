@@ -23,7 +23,7 @@
 
   <div>
     <%= form.label :campaigns_list, style: "display: block" %>
-    <%= form.text_field :campaigns_list %>
+    <%= form.select :campaigns_list, options_for_select(Campaign.all.collect{ |e| [e.campaign_name, e.campaign_id] }, 1 ), prompt: '-Select-', :multiple => 'true' %>
   </div>
 
   <div>

@@ -73,3 +73,5 @@ gem 'jquery-rails'
 gem 'sassc-rails'
 
 gem 'ransack', :github => 'activerecord-hackery/ransack', :branch => 'main'
+
+gem 'pry'
