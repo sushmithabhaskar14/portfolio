@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   resources :campaigns
-  resources :users
+  resources :users do 
+    collection do
+      get 'fetch'
+    end
+  end
   resources :blogs
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

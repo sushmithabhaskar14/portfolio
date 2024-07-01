@@ -1,34 +1,54 @@
 <p style="color: green"><%= notice %></p>
+<div class="card">
+	<article class="card-group-item">
+		<header class="card-header">
+			<h6 class="title">Campaigns List </h6>
+		</header>
+		<div class="filter-content">
+			<div class="card-body">
+			<form>
+        <%@filter.each do |key,value|%>
+				<label class="form-check">
+				  <input class="form-check-input filter" type="checkbox" value="" id=<%="#{@filter[key][0].campaign_name}"%> onClick="fetch_users()">
+				  <span class="form-check-label">
+            <%="#{@filter[key][0].campaign_name}"%>
+				  </span>
+				</label> <!-- form-check.// -->
+        <%end%>
+			</form>
 
-<h1>Users</h1>
+			</div> <!-- card-body.// -->
+		</div>
+	</article> <!-- card-group-item.// -->
+  <header class="card-header">
+  <h6 class="title">User </h6>
+  </header>
+  <div id="items_grid" >
+    <%= render partial: 'user_grid', locals: {users: @users}  %>
+  </div>
+  <header class="card-header">
+  <%= link_to "New user", new_user_path %> 
+  </header>
+</div> 
 
-<div id="users">
-  
-</div>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">ID</th>
-      <th scope="col">Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Campaign name</th>
-      <th scope="col">view</th>
-
-    </tr>
-  </thead>
-  <tbody>
-      <% @users.each do |user| %>
-        <tr>
-        <th scope="row"><%=user.id%></th>
-        <td><%=user.name%></td>
-        <td><%=user.email%></td>
-        <td><%= user.campaigns_list.map { |ele| ele['campaign_name']}.join(',')%>
-        </td>
-        <td><%= link_to "view", user %></td>
-        </tr>    
-      <%end%>
-  </tbody>
-</table>
-<%= link_to "New user", new_user_path %> 
-
+<script type="">
+  function fetch_users() {
+    debugger
+    var chkArray = [];
+    $(".filter:checked").each(function () {
+        chkArray.push($(this).attr("id"));
+    });
+    console.log(chkArray)
+    $.ajax({
+        url: 'users/fetch',
+        data: {"filter": chkArray},
+        type: "GET",
+        success: function (data) {
+            console.log('success');
+        },
+        error: function (error) {
+            console.log(`Error ${error}`);
+        }
+    });
+  }
+</script>

@@ -4,17 +4,7 @@ class UsersController < ApplicationController
   # GET /users or /users.json
   def index
     @filter = Campaign.all.group_by{|e| e.campaign_id}
-    if params['filter'].present?
-      sql = "SELECT *
-              FROM users,
-              JSON_TABLE(campaigns_list, '$[*]' COLUMNS (
-              campaign_name VARCHAR(50) PATH '$.campaign_name'
-              )) AS jt
-              WHERE jt.campaign_name = #{params['filter']}"
-      @users= @users.find_by_sql(sql)
-    else
-     @users = User.all
-    end
+    @users = User.all
     @user_campaignlist = {}
     @users.each do |user|
       @user_campaignlist[user.id] = user.campaigns_list.each{|e| e['campaign_name'] }
@@ -74,6 +64,23 @@ class UsersController < ApplicationController
   
   def create_capaign_hash(_params)
     Campaign.where(campaign_id: _params).map{|e| { "campaign_id" => e.campaign_id, "campaign_name" => e.campaign_name } }
+  end
+
+  def fetch
+    @user_campaignlist = {}
+    if params['filter'].present?
+      sql = "SELECT *
+              FROM users,
+              JSON_TABLE(campaigns_list, '$[*]' COLUMNS (
+              campaign_name VARCHAR(50) PATH '$.campaign_name'
+              )) AS jt
+              WHERE jt.campaign_name in ('#{params['filter'].join('\',\'')}')"
+      @users= User.find_by_sql(sql)
+
+      @users.each do |user|
+        @user_campaignlist[user.id] = user.campaigns_list.each{|e| e['campaign_name'] }
+      end
+    end
   end
   
   private
