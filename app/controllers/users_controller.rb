@@ -69,17 +69,18 @@ class UsersController < ApplicationController
   def fetch
     @user_campaignlist = {}
     if params['filter'].present?
-      sql = "SELECT *
+      sql = "SELECT DISTINCT(id), id, name, email ,campaigns_list
               FROM users,
               JSON_TABLE(campaigns_list, '$[*]' COLUMNS (
               campaign_name VARCHAR(50) PATH '$.campaign_name'
               )) AS jt
               WHERE jt.campaign_name in ('#{params['filter'].join('\',\'')}')"
       @users= User.find_by_sql(sql)
-
-      @users.each do |user|
-        @user_campaignlist[user.id] = user.campaigns_list.each{|e| e['campaign_name'] }
-      end
+    else
+      @users= User.all
+    end
+    @users.each do |user|
+      @user_campaignlist[user.id] = user.campaigns_list.each{|e| e['campaign_name'] }
     end
   end
   
