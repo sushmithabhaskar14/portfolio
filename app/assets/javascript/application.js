@@ -1,4 +1,4 @@
-//= require bootstrap.bundler.js
+//= require bootstrap.bundle.js
 //= require bootstrap.bundle.min.js
 //= require bootstrap.js
 //= require jquery.min.js
