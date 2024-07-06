@@ -72,10 +72,11 @@ class UsersController < ApplicationController
       sql = "SELECT DISTINCT(id), id, name, email ,campaigns_list
               FROM users,
               JSON_TABLE(campaigns_list, '$[*]' COLUMNS (
-              campaign_name VARCHAR(50) PATH '$.campaign_name'
+              campaign_name VARCHAR(50) PATH '$.campaign_name',
+              campaign_id VARCHAR(50) PATH '$.campaign_id'
               )) AS jt
-              WHERE jt.campaign_name in ('#{params['filter'].join('\',\'')}')"
-      @users= User.find_by_sql(sql)
+              WHERE jt.campaign_id in ('#{params['filter'].join('\',\'')}')"
+       @users= User.find_by_sql(sql)
     else
       @users= User.all
     end
