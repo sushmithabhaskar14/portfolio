@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
+  resources :attachments
+  resources :projects
+  resources :portfolios
   resources :campaigns
   resources :users do 
     collection do
       get 'fetch'
+      get 'show_portfolio'
     end
   end
   resources :blogs
@@ -13,5 +17,5 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  root "users#index"
+  root "users#show_portfolio"
 end

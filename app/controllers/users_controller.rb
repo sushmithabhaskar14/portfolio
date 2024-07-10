@@ -30,8 +30,11 @@ class UsersController < ApplicationController
     @user.campaigns_list = create_capaign_hash(params[:user][:campaigns_list].reject { |c| c.empty? })
     respond_to do |format|
       if @user.save
-        format.html { redirect_to user_url(@user), notice: "User was successfully created." }
-        format.json { render :show, status: :created, location: @user }
+        ActiveRecord::Base.transaction do
+          @user.attachments.build(content:  params[:user][:attachment], imageable_type:  'User', imageable_id: @user.id ).save
+          format.html { redirect_to user_url(@user), notice: "User was successfully created." }
+          format.json { render :show, status: :created, location: @user }
+        end
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @user.errors, status: :unprocessable_entity }
@@ -83,6 +86,10 @@ class UsersController < ApplicationController
     @users.each do |user|
       @user_campaignlist[user.id] = user.campaigns_list.each{|e| e['campaign_name'] }
     end
+  end
+
+  def show_portfolio
+    @portfolio = true
   end
   
   private
