@@ -1,0 +1,75 @@
+2024-07-10 20:07:56.821 [info] Log level: Info
+2024-07-10 20:07:56.821 [info] Validating found git in: "git"
+2024-07-10 20:07:56.821 [info] Using git "2.34.1" from "git"
+2024-07-10 20:07:56.821 [info] > git rev-parse --show-toplevel [28ms]
+2024-07-10 20:07:56.821 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-07-10 20:07:56.821 [info] > git rev-parse --show-toplevel [15ms]
+2024-07-10 20:07:56.821 [info] > git rev-parse --git-dir --git-common-dir [8ms]
+2024-07-10 20:07:56.821 [info] Open repository: /root/devcamp/new_app
+2024-07-10 20:07:56.821 [info] > git rev-parse --show-toplevel [38ms]
+2024-07-10 20:07:56.821 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-07-10 20:07:56.821 [info] > git config --get commit.template [55ms]
+2024-07-10 20:07:56.821 [info] > git rev-parse --show-toplevel [14ms]
+2024-07-10 20:07:56.821 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/gem_creation refs/remotes/gem_creation [14ms]
+2024-07-10 20:07:56.821 [info] > git rev-parse --git-dir --git-common-dir [21ms]
+2024-07-10 20:07:56.821 [info] Open repository: /root/devcamp/expense_tracker
+2024-07-10 20:07:56.899 [info] > git status -z -uall [115ms]
+2024-07-10 20:07:56.901 [info] > git config --get commit.template [74ms]
+2024-07-10 20:07:57.036 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/gem_creation refs/remotes/gem_creation [103ms]
+2024-07-10 20:07:57.314 [info] No remotes found in the git config file.
+2024-07-10 20:07:57.320 [info] > git config --local branch.gem_creation.vscode-merge-base [274ms]
+2024-07-10 20:07:57.335 [info] > git config --get commit.template [311ms]
+2024-07-10 20:07:57.406 [info] > git check-ignore -v -z --stdin [50ms]
+2024-07-10 20:07:57.409 [info] > git check-ignore -v -z --stdin [38ms]
+2024-07-10 20:07:57.411 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [77ms]
+2024-07-10 20:07:57.418 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [104ms]
+2024-07-10 20:07:57.418 [warning] No such branch: main.
+2024-07-10 20:07:57.439 [info] > git rev-parse --show-toplevel [35ms]
+2024-07-10 20:07:57.439 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-07-10 20:07:57.443 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/gem_creation refs/remotes/gem_creation [6ms]
+2024-07-10 20:07:57.464 [info] > git status -z -uall [12ms]
+2024-07-10 20:07:57.529 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/gem_creation refs/remotes/gem_creation [45ms]
+2024-07-10 20:07:57.544 [info] > git config --local branch.gem_creation.vscode-merge-base [7ms]
+2024-07-10 20:07:57.559 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [6ms]
+2024-07-10 20:07:57.761 [info] > git status -z -uall [333ms]
+2024-07-10 20:07:57.863 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [75ms]
+2024-07-10 20:07:57.863 [warning] No such branch: main.
+2024-07-10 20:07:58.003 [info] > git config --get commit.template [142ms]
+2024-07-10 20:07:58.069 [info] No remotes found in the git config file.
+2024-07-10 20:07:58.073 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-07-10 20:07:58.074 [warning] No such branch: main.
+2024-07-10 20:07:58.104 [info] > git status -z -uall [13ms]
+2024-07-10 20:07:58.148 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [34ms]
+2024-07-10 20:07:58.149 [warning] No such branch: main.
+2024-07-10 20:07:59.015 [info] > git rev-parse --show-toplevel [4ms]
+2024-07-10 20:07:59.015 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-07-10 20:07:59.182 [info] > git show --textconv :app/controllers/users_controller.rb [31ms]
+2024-07-10 20:07:59.197 [info] > git ls-files --stage -- /root/devcamp/new_app/app/controllers/users_controller.rb [23ms]
+2024-07-10 20:07:59.287 [info] > git cat-file -s 79105bfd517bc5ba355f05d3a41bc2c530b43ea1 [57ms]
+2024-07-10 20:07:59.677 [info] > git rev-parse --show-toplevel [9ms]
+2024-07-10 20:07:59.677 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-07-10 20:16:23.046 [info] > git config --get commit.template [27ms]
+2024-07-10 20:16:23.054 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/gem_creation refs/remotes/gem_creation [18ms]
+2024-07-10 20:16:23.137 [info] > git status -z -uall [72ms]
+2024-07-10 20:16:23.220 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/gem_creation refs/remotes/gem_creation [47ms]
+2024-07-10 20:16:23.237 [info] > git config --local branch.gem_creation.vscode-merge-base [7ms]
+2024-07-10 20:16:23.252 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [3ms]
+2024-07-10 20:16:26.463 [info] > git check-ignore -v -z --stdin [6ms]
+2024-07-10 20:16:27.419 [info] > git check-ignore -v -z --stdin [3ms]
+2024-07-10 20:16:28.203 [info] > git check-ignore -v -z --stdin [2ms]
+2024-07-10 20:16:28.226 [info] > git config --get commit.template [6ms]
+2024-07-10 20:16:28.228 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/gem_creation refs/remotes/gem_creation [3ms]
+2024-07-10 20:16:28.242 [info] > git status -z -uall [11ms]
+2024-07-10 20:16:28.276 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/gem_creation refs/remotes/gem_creation [28ms]
+2024-07-10 20:16:28.294 [info] > git config --local branch.gem_creation.vscode-merge-base [8ms]
+2024-07-10 20:16:28.303 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [4ms]
+2024-07-10 20:16:29.003 [info] > git check-ignore -v -z --stdin [2ms]
+2024-07-10 20:16:29.785 [info] > git check-ignore -v -z --stdin [2ms]
+2024-07-10 20:16:32.053 [info] > git check-ignore -v -z --stdin [3ms]
+2024-07-10 20:16:33.284 [info] > git config --get commit.template [7ms]
+2024-07-10 20:16:33.287 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/gem_creation refs/remotes/gem_creation [3ms]
+2024-07-10 20:16:33.303 [info] > git status -z -uall [12ms]
+2024-07-10 20:16:33.343 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/gem_creation refs/remotes/gem_creation [28ms]
+2024-07-10 20:16:33.350 [info] > git config --local branch.gem_creation.vscode-merge-base [2ms]
+2024-07-10 20:16:33.356 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [2ms]
+2024-07-10 20:16:34.024 [info] > git check-ignore -v -z --stdin [3ms]

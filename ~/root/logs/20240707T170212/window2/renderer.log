@@ -1,0 +1,5 @@
+2024-07-07 17:02:15.869 [info] Started local extension host with pid 26599.
+2024-07-07 17:02:24.341 [info] [perf] Render performance baseline is 127ms
+2024-07-07 17:03:14.863 [warning] [lifecycle] onBeforeShutdown is taking a long time, pending operations: veto.backups
+2024-07-07 17:03:15.320 [info] [lifecycle]: Shutdown was prevented by final veto (id: veto.backups)
+2024-07-07 17:03:30.997 [warning] [lifecycle] onBeforeShutdown is taking a long time, pending operations: veto.backups

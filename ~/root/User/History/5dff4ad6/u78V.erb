@@ -1,0 +1,24 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Campaign name</th>
+      <th scope="col">view</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <% users.each do |user| %>
+        <tr>
+        <th scope="row"><%=user.id%></th>
+        <td><%=user.name%></td>
+        <td><%=user.email%></td>
+        <td><%= user.campaigns_list.map { |ele| ele['campaign_id']}.join(',')%>
+        </td>
+        <td><%= link_to "view", user %></td>
+        </tr>    
+    <%end%>
+  </tbody>
+</table>

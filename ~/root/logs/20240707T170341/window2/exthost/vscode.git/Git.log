@@ -1,0 +1,53 @@
+2024-07-07 17:03:48.682 [info] Log level: Info
+2024-07-07 17:03:48.682 [info] Validating found git in: "git"
+2024-07-07 17:03:48.682 [info] Using git "2.34.1" from "git"
+2024-07-07 17:03:48.682 [info] > git rev-parse --show-toplevel [19ms]
+2024-07-07 17:03:48.682 [info] > git rev-parse --git-dir --git-common-dir [34ms]
+2024-07-07 17:03:48.682 [info] Open repository: /root/devcamp/new_app
+2024-07-07 17:03:48.682 [info] > git rev-parse --show-toplevel [21ms]
+2024-07-07 17:03:48.682 [info] > git config --get commit.template [29ms]
+2024-07-07 17:03:48.682 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/gem_creation refs/remotes/gem_creation [61ms]
+2024-07-07 17:03:48.682 [info] > git rev-parse --show-toplevel [102ms]
+2024-07-07 17:03:48.691 [info] > git status -z -uall [31ms]
+2024-07-07 17:03:48.795 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/gem_creation refs/remotes/gem_creation [72ms]
+2024-07-07 17:03:48.805 [info] > git rev-parse --show-toplevel [126ms]
+2024-07-07 17:03:49.043 [info] > git config --local branch.gem_creation.vscode-merge-base [237ms]
+2024-07-07 17:03:49.054 [info] > git config --get commit.template [260ms]
+2024-07-07 17:03:49.071 [info] > git rev-parse --show-toplevel [44ms]
+2024-07-07 17:03:49.095 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [44ms]
+2024-07-07 17:03:49.190 [info] > git check-ignore -v -z --stdin [79ms]
+2024-07-07 17:03:49.194 [info] > git rev-parse --show-toplevel [100ms]
+2024-07-07 17:03:49.196 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/gem_creation refs/remotes/gem_creation [119ms]
+2024-07-07 17:03:49.251 [info] > git status -z -uall [42ms]
+2024-07-07 17:03:49.283 [info] > git rev-parse --git-dir --git-common-dir [34ms]
+2024-07-07 17:03:49.322 [info] Open repository: /root/devcamp/new_app/copyright_tool
+2024-07-07 17:03:49.370 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/gem_creation refs/remotes/gem_creation [105ms]
+2024-07-07 17:03:49.597 [info] > git config --local branch.gem_creation.vscode-merge-base [200ms]
+2024-07-07 17:03:49.618 [info] > git rev-parse --show-toplevel [249ms]
+2024-07-07 17:03:49.620 [info] > git config --get commit.template [265ms]
+2024-07-07 17:03:49.657 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [41ms]
+2024-07-07 17:03:49.667 [info] No remotes found in the git config file.
+2024-07-07 17:03:49.675 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2024-07-07 17:03:49.676 [warning] No such branch: master.
+2024-07-07 17:03:49.699 [info] > git rev-parse --show-toplevel [43ms]
+2024-07-07 17:03:49.720 [info] > git status -z -uall [23ms]
+2024-07-07 17:03:49.799 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [65ms]
+2024-07-07 17:03:49.800 [warning] No such branch: master.
+2024-07-07 17:03:49.803 [info] > git rev-parse --show-toplevel [87ms]
+2024-07-07 17:03:49.841 [info] > git rev-parse --show-toplevel [20ms]
+2024-07-07 17:03:49.843 [info] > git config --get commit.template [45ms]
+2024-07-07 17:03:49.858 [info] No remotes found in the git config file.
+2024-07-07 17:03:49.881 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [24ms]
+2024-07-07 17:03:49.883 [warning] No such branch: master.
+2024-07-07 17:03:49.907 [info] > git rev-parse --show-toplevel [29ms]
+2024-07-07 17:03:49.923 [info] > git status -z -uall [18ms]
+2024-07-07 17:03:49.949 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [12ms]
+2024-07-07 17:03:49.949 [warning] No such branch: master.
+2024-07-07 17:03:49.951 [info] > git rev-parse --show-toplevel [32ms]
+2024-07-07 17:03:49.991 [info] > git rev-parse --show-toplevel [9ms]
+2024-07-07 17:03:50.016 [info] > git rev-parse --show-toplevel [7ms]
+2024-07-07 17:03:50.033 [info] > git rev-parse --show-toplevel [8ms]
+2024-07-07 17:03:50.157 [info] > git check-ignore -v -z --stdin [6ms]
+2024-07-07 17:03:50.532 [info] > git show --textconv :app/controllers/application_controller.rb [15ms]
+2024-07-07 17:03:50.538 [info] > git ls-files --stage -- /root/devcamp/new_app/app/controllers/application_controller.rb [10ms]
+2024-07-07 17:03:50.549 [info] > git cat-file -s 09705d12ab4dfe301535a973e2607fad4efc9d0d [5ms]

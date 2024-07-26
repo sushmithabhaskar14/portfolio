@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@inertiajs/vue3": "^1.2.0",
+    "@js-from-routes/client": "^1.0.4",
+    "@js-from-routes/inertia": "^1.10.2",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vite-plugin-ruby": "^5.0.0",
+    "vite-plugin-vuetify": "^2.0.3",
+    "vuetify": "^3.6.12"
+  },
+  "devDependencies": {
+    "vite-plugin-full-reload": "^1.2.0"
+  }
+}

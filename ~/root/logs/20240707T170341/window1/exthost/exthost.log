@@ -1,0 +1,107 @@
+2024-07-07 17:03:47.142 [info] Extension host with pid 27367 started
+2024-07-07 17:03:47.143 [info] Skipping acquiring lock for /root/devcamp/new_app/~/root/User/workspaceStorage/f232d8e2bbe7c295670844af1be87be2.
+2024-07-07 17:03:47.817 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-07-07 17:03:48.048 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-07-07 17:03:48.234 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-07-07 17:03:48.341 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-07-07 17:03:48.643 [info] Eager extensions activated
+2024-07-07 17:03:48.817 [warning] [Decorations] CAPPING events from decorations provider vscode.git 419
+2024-07-07 17:03:48.859 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-07-07 17:03:48.865 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-07-07 17:03:49.446 [warning] [Decorations] CAPPING events from decorations provider vscode.git 422
+2024-07-07 17:03:49.702 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2024-07-07 17:03:53.047 [warning] [Decorations] CAPPING events from decorations provider vscode.git 434
+2024-07-07 17:03:58.125 [warning] [Decorations] CAPPING events from decorations provider vscode.git 433
+2024-07-07 17:04:06.828 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:04:11.896 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:04:16.946 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:04:21.995 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:04:27.029 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:04:32.092 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:04:37.136 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:04:42.206 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:04:47.251 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:04:52.302 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:04:57.357 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:05:02.417 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:05:07.459 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:05:12.503 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:06:59.039 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:07:05.217 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:07:10.281 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:07:23.518 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:07:28.577 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:07:37.640 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:07:42.736 [warning] [Decorations] CAPPING events from decorations provider vscode.git 452
+2024-07-07 17:07:44.964 [info] Extension host terminating: renderer closed the MessagePort
+2024-07-07 17:07:44.996 [error] Canceled: Canceled
+	at new I (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:144:34990)
+	at S.U (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:6023)
+	at z.<computed>.F.charCodeAt.T.CharCode.DollarSign.z.<computed> (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:3107)
+	at f.g (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:203861)
+	at f.executeCommand (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:203299)
+	at A.registerCommand.description (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:202623)
+	at f.h (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:204400)
+	at f.g (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:203392)
+	at f.executeCommand (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:203299)
+	at Object.executeCommand (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:164:23051)
+	at n.O [as value] (/snap/code/163/usr/share/code/resources/app/extensions/git/dist/main.js:2:949375)
+	at r.B (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:83:737)
+	at r.C (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:83:807)
+	at r.fire (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:83:1023)
+	at Object.p [as dispose] (/snap/code/163/usr/share/code/resources/app/extensions/git/dist/main.js:2:968579)
+	at /snap/code/163/usr/share/code/resources/app/extensions/git/dist/main.js:2:974617
+	at Array.forEach (<anonymous>)
+	at f.dispose (/snap/code/163/usr/share/code/resources/app/extensions/git/dist/main.js:2:974603)
+	at c.<anonymous> (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:152:4048)
+	at c.dispose (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:152:4145)
+	at c.<anonymous> (/snap/code/163/usr/share/code/resources/app/extensions/git/dist/main.js:2:951632)
+	at c.dispose (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:152:4145)
+	at d (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:30:744)
+	at m.eb (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:160:10039)
+	at /snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:160:7915
+	at Array.map (<anonymous>)
+	at m.$ (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:160:7902)
+	at m.terminate (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:160:8175)
+	at d.terminate (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:164:1513)
+	at i (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:177:10617)
+	at MessagePortMain.<anonymous> (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:177:6809)
+	at MessagePortMain.emit (node:events:514:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2285) setContext undefined
+2024-07-07 17:07:44.998 [error] Canceled: Canceled
+	at new I (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:144:34990)
+	at S.U (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:6023)
+	at z.<computed>.F.charCodeAt.T.CharCode.DollarSign.z.<computed> (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:3107)
+	at f.g (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:203861)
+	at f.executeCommand (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:203299)
+	at A.registerCommand.description (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:202623)
+	at f.h (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:204400)
+	at f.g (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:203392)
+	at f.executeCommand (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:154:203299)
+	at Object.executeCommand (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:164:23051)
+	at set hasGitHubRepositories (/snap/code/163/usr/share/code/resources/app/extensions/github/dist/extension.js:2:322969)
+	at /snap/code/163/usr/share/code/resources/app/extensions/github/dist/extension.js:2:323928
+	at n.value (/snap/code/163/usr/share/code/resources/app/extensions/git/dist/main.js:2:1055117)
+	at r.B (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:83:737)
+	at r.C (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:83:807)
+	at r.fire (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:83:1023)
+	at Object.p [as dispose] (/snap/code/163/usr/share/code/resources/app/extensions/git/dist/main.js:2:968579)
+	at /snap/code/163/usr/share/code/resources/app/extensions/git/dist/main.js:2:974617
+	at Array.forEach (<anonymous>)
+	at f.dispose (/snap/code/163/usr/share/code/resources/app/extensions/git/dist/main.js:2:974603)
+	at c.<anonymous> (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:152:4048)
+	at c.dispose (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:152:4145)
+	at c.<anonymous> (/snap/code/163/usr/share/code/resources/app/extensions/git/dist/main.js:2:951632)
+	at c.dispose (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:152:4145)
+	at d (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:30:744)
+	at m.eb (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:160:10039)
+	at /snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:160:7915
+	at Array.map (<anonymous>)
+	at m.$ (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:160:7902)
+	at m.terminate (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:160:8175)
+	at d.terminate (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:164:1513)
+	at i (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:177:10617)
+	at MessagePortMain.<anonymous> (/snap/code/163/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:177:6809)
+	at MessagePortMain.emit (node:events:514:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2285) setContext undefined
+2024-07-07 17:07:44.998 [info] Extension host with pid 27367 exiting with code 0

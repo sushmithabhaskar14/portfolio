@@ -1,0 +1,4 @@
+2024-07-07 17:03:44.779 [info] Started local extension host with pid 27354.
+2024-07-07 17:03:50.497 [warning] [backup tracker] suspended, ignoring register event git:/root/devcamp/new_app/app/controllers/application_controller.rb.git?%7B%22path%22%3A%22%2Froot%2Fdevcamp%2Fnew_app%2Fapp%2Fcontrollers%2Fapplication_controller.rb%22%2C%22ref%22%3A%22%22%7D 
+2024-07-07 17:03:50.946 [info] [perf] Render performance baseline is 94ms
+2024-07-07 17:03:51.192 [warning] [backup tracker] suspended, ignoring dirty change event file:///root/devcamp/new_app/app/controllers/application_controller.rb 

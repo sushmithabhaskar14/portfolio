@@ -1,3 +1,4 @@
+<!--<%unless  @portfolio %>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div id="main">
     <button class="openbtn" onclick="openNav()">☰</button>  
@@ -35,3 +36,42 @@
     </form>
   </div>
 </nav>
+<%else%>
+ 
+  <div id="mySidebar" class="sidebar">
+    <div class="list">
+      <%= image_tag "heroine.jpeg", style: 'width: 100px; height: 100px; object-fit: cover; border-radius: 100%; ', class: "center" %>
+      <br> <br>
+      <a href="#home">Home</a>
+      <br> <br>
+      <a href="#about">About</a>
+      <br> <br>
+      <a href="#skills">Skills</a>
+      <br> <br>
+      <a href="#contact">Contact</a>
+      </div>
+  </div>
+ 
+<%end%>
+<style>
+  .option{
+    display:flex; 
+    justify-content:center;
+  }
+  .sidebar { 
+  padding-left:7%
+  }
+  .center{
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+</style> -->
+
+

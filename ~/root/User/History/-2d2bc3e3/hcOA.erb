@@ -1,0 +1,78 @@
+<p style="color: green"><%= notice %></p>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <h6 class="title filter_name">Campaigns List </h6>
+  <form>
+    <%@filter.each do |key,value|%>
+    <label class="form-check">
+      <span class="form-check-label filter_name">
+        <%="#{@filter[key][0].campaign_name}"%>
+        <input class="form-check-input filter" type="checkbox" value="" id=<%="#{@filter[key][0].campaign_id}"%> onClick="fetch_users()" style="width:75px; height:25px;" >
+
+      </span>
+    </label> <!-- form-check.// -->
+    <%end%>
+	</form>
+
+ <!-- <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a> -->
+</div>
+
+
+<div class="card">
+	<article class="card-group-item">
+		<!-- <header class="card-header">
+			<h6 class="title">Campaigns List </h6>
+		</header>
+		<div class="filter-content">
+			<div class="card-body">
+			
+
+			</div> <!-- card-body.// -->
+		</div>
+	</article> <!-- card-group-item.// --> 
+  <header class="card-header">
+  <h6 class="title">User </h6>
+  </header>
+  <div id="user_grid" >
+    <%= render partial: 'user_grid', locals: {users: @users}  %>
+  </div>
+  <header class="card-header">
+  <%= link_to "New user", new_user_path %> 
+  </header>
+</div> 
+
+<script type="">
+  function fetch_users() {
+    debugger
+    var chkArray = [];
+    $(".filter:checked").each(function () {
+        chkArray.push($(this).attr("id"));
+    });
+    console.log(chkArray)
+    $.ajax({
+        url: 'users/fetch',
+        data: {"filter": chkArray},
+        type: "GET",
+        success: function (data) {
+            console.log('success');
+        },
+        error: function (error) {
+            console.log(`Error ${error}`);
+        }
+    });
+  }
+
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+</script>

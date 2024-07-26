@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :categories
   resources :attachments
   resources :projects
   resources :portfolios
